@@ -28,6 +28,4 @@ class Account(object):
             self.permissions.get(collection_name) == 'modify')
 
     def __repr__(self):
-        return (
-            'Account(username={}, is_admin={})'
-            .format(self.username, self.is_admin))
+        return f'Account(username={self.username}, is_admin={self.is_admin})'
